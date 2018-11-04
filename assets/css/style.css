@@ -1,0 +1,51 @@
+header {
+    background-image: url("../images/Trains1.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.jumbotron { 
+    color: white;
+}
+
+.traiHead {
+    background-color: royalblue; 
+    color: white; 
+    padding: 10px 0px 10px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tabHead {
+    border: solid 2px royalblue; 
+    border-radius: 5px;
+}
+
+.addTrain {
+    border: solid 2px royalblue; 
+    border-radius: 5px;
+}
+
+.formHeader {
+    background-color:royalblue; 
+    color: white; 
+    padding: 7px 0px 7px 9px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.table {
+    padding: 10px;
+}
+
+button {
+    
+
+}
+
+#submit-btn {
+    background-color: royalblue;
+    color: #fff;
+    border: 0px;
+    margin: 0 auto;
+}

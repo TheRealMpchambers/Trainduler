@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="assets/js/logic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<header>
+    <div class="container">
+        <div style="background:royalblue !important" class="jumbotron">
+            <h1 class="text-center">Train Departure Board</h1>
+            <p class="text-center">"Between the railroad tracks suicidal flowers grow."</p>
+        </div>
+</header>
+
+<body>
+    <div class="tabHead">
+    <div class="traiHead">
+        <p class="text-center"><b>Current Train Scheduler</b></p>
+    </div>
+    <div style="padding: 10%;">
+        <table id="traiHead" class="table">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody id="traitab">
+                <tr></tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <br>
+    </div>
+    <br>
+    <br>
+    <div class="addTrain">
+        <div class=formHeader>
+            <strong>Add Train</strong>
+        </div>
+        <form style="padding: 9px;">
+            <div class="form-group">
+                <label for="trainName">Train Name</label>
+                <input type="text" class="form-control" id="train-name-input">
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" class="form-control" id="destination-input">
+            </div>
+            <div class="form-group">
+                <label for="firstTrainTime">First Train Time</label>
+                <input type="text" class="form-control" id="train-time" placeholder="HH:mm">
+            </div>
+            <div class="form-group">
+                <label for="trainFrequency">Frequency (min)</label>
+                <input type="text" class="form-control" id="train-frequency">
+            </div>
+            <button type="submit" class="btn btn-default" id="submit-btn">Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
